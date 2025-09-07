@@ -1,11 +1,11 @@
-# Build stage - Use valid Maven image
-FROM maven:3.9.6-eclipse-temurin-17 AS build
+# Build stage - Use Maven image with Java 21
+FROM maven:3.9.6-eclipse-temurin-21 AS build
 WORKDIR /app
 COPY . .
 RUN mvn clean package -DskipTests
 
-# Run stage
-FROM eclipse-temurin:17-jdk-focal
+# Run stage - Use Java 21 runtime
+FROM eclipse-temurin:21-jre-focal
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 EXPOSE 8081

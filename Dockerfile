@@ -1,14 +1,14 @@
-# Use Java 17
-FROM eclipse-temurin:17-jdk-focal
 
-# Set working directory
+
+# Build stage
+FROM maven:3.8.8-openjdk-17 AS build
 WORKDIR /app
+COPY . .
+RUN mvn clean package -DskipTests
 
-# Copy the JAR file you built in STS
-COPY target/*.jar app.jar
-
-# Expose port
+# Run stage
+FROM eclipse-temurin:17-jdk-focal
+WORKDIR /app
+COPY --from=build /app/target/*.jar app.jar
 EXPOSE 8081
-
-# Run the application
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "-Dserver.port=8081", "app.jar"]

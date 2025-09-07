@@ -1,0 +1,77 @@
+<!-- fragments/about.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="about-section">
+	<section class="section about" id="about">
+		<div class="container">
+			<div class="section-title-container">
+				<h2 class="section-title">About me</h2>
+				<p class="section-subtitle">
+					Get to know more about my background, skills, and what drives me
+				</p>
+			</div>
+			<div class="about-container">
+			    <div class="about-content">
+			        <div class="about-tagline">My Background</div>
+			        <h3 class="about-heading">Passionate Software Developer | Turning Ideas into Code</h3>
+			        <p class="about-text">
+			            Hi, I’m Harshal Wagh — a passionate Java Full Stack Developer (Fresher) with a strong foundation in Core Java, JDBC, JSP/Servlets, Hibernate, Spring Boot, Angular, React, and MySQL. I enjoy building scalable and user-friendly applications and have worked on multiple projects that combine frontend and backend technologies.
+			        </p>
+			        <p class="about-text">
+			           I’m always eager to learn new tools, debug problems, and solve real-world challenges through clean and efficient code. My learning journey includes hands-on projects where I explored everything from basic web development (HTML, CSS, JavaScript) to enterprise-level solutions with Spring Boot and React.
+			        </p>
+			        <p class="about-text">
+			            As a fresher, my goal is to kickstart my career in software development, contribute to impactful projects, and keep growing as a developer every single day.
+			        </p>
+			        <!-- Keep rest of the content unchanged -->
+			        <div class="skills-container">
+			            <div class="skill-item">
+			                <div class="skill-icon"><i class="fab fa-java"></i></div>
+			                <div class="skill-name">Java</div>
+			            </div>
+			            <div class="skill-item">
+			                <div class="skill-icon"><i class="fas fa-code"></i></div>
+			                <div class="skill-name">Spring Boot</div>
+			            </div>
+			            <div class="skill-item">
+			                <div class="skill-icon"><i class="fab fa-js"></i></div>
+			                <div class="skill-name">JavaScript</div>
+			            </div>
+			            <div class="skill-item">
+			                <div class="skill-icon"><i class="fab fa-react"></i></div>
+			                <div class="skill-name">React</div>
+			            </div>
+			            <div class="skill-item">
+			                <div class="skill-icon"><i class="fab fa-angular"></i></div>
+			                <div class="skill-name">Angular</div>
+			            </div>
+			            <div class="skill-item">
+			                <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+			                <div class="skill-name">MySQL</div>
+			            </div>
+		<!--	            <div class="skill-item">
+			                <div class="skill-icon"><i class="fa-solid fa-cloud"></i></div>
+			                <div class="skill-name">AWS</div>
+			            </div>-->
+			            <div class="skill-item">
+			                <div class="skill-icon"><i class="fa-solid fa-code-branch"></i></div>
+			                <div class="skill-name">Git</div>
+			            </div>
+			        </div>
+			    </div>
+			    <div class="about-visual">
+			        <div class="about-image-container">
+			            <div class="about-image-bg"></div>
+			            <img src="/images/hero-section.jpg" alt="About" class="about-image">
+			        </div>
+			        <div class="about-decorations">
+			            <div class="about-decoration"></div>
+			            <div class="about-decoration"></div>
+			        </div>
+			    </div>
+			</div>
+		</div>
+	</section>
+   
+</th:block>
+</html>

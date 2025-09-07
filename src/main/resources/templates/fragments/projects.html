@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="projects-section">
+	<section class="section projects" id="projects">
+		<div class="container">
+			<div class="section-title-container">
+				<h2 class="section-title">My Work</h2>
+				<p class="section-subtitle">
+					Explore some of my recent projects.
+				</p>
+			</div>
+			<div class="projects-container">
+				<div class="project-card">
+					<div class="project-image">
+						<img src="/images/Todo.png" alt="todoapp">
+						<div class="project-overlay"></div>
+						<div class="project-tags">
+							<span class="project-tag">Html</span>
+							<span class="project-tag">Css</span>
+							<span class="project-tag">JavaScript</span>
+							<!--                      <span class="project-tag">MySQL</span>
+                            <span class="project-tag">IntelliJ IDEA</span>-->
+						</div>
+					</div>
+					<div class="project-content">
+						<h3 class="project-title">React-JS - Todo List</h3>
+						<p class="project-description">
+							Developed a responsive Todo List application using React.js with HTML, CSS, and JavaScript.
+							Implemented features like task creation, completion, and deletion for efficient task
+							management.
+						</p>
+						<div class="project-links">
+							<a href="https://github.com/harshal342/todo-app" class="project-link" target="_blank">
+								<i class="fab fa-github"></i> View Code
+							</a>
+							<a href="https://todo-app-342.netlify.app/" class="project-link">
+								Project Link <i class="fas fa-arrow-right"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="project-card">
+					<div class="project-image">
+						<img src="/images/EmployeeManagementsys.png" alt="todoapp">
+						<div class="project-overlay"></div>
+						<div class="project-tags">
+							<span class="project-tag">java</span>
+							<span class="project-tag">spring-boot</span>
+							<span class="project-tag">Angular</span>
+							<!--                      <span class="project-tag">MySQL</span>
+				                           <span class="project-tag">IntelliJ IDEA</span>-->
+						</div>
+					</div>
+					<div class="project-content">
+						<h3 class="project-title">Employee Management System</h3>
+						<p class="project-description">
+							A full-stack web application built with Spring Boot, PostgreSQL, and Angular, designed to manage employee data efficiently. The system allows users to add, view, update, and delete employee records through a clean and intuitive interface.
+							<br>*CRUD Operations: Seamlessly create, read, update, and delete employee details.
+						</p>
+						<div class="project-links">
+							<a href="https://github.com/harshal342/EmployeManagementSystem_342" class="project-link" target="_blank">
+								<i class="fab fa-github"></i> View Code
+							</a>
+							<a href="https://employee-management-system-chi-three.vercel.app/employees" class="project-link">
+								Project Link <i class="fas fa-arrow-right"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+</th:block>
+
+</html>

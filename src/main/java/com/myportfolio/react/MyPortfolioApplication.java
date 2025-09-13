@@ -8,7 +8,7 @@ public class MyPortfolioApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(MyPortfolioApplication.class, args);
-		System.out.println("🚀 PORT from ENV = " + System.getenv("PORT"));
+		
 
 	}
 
